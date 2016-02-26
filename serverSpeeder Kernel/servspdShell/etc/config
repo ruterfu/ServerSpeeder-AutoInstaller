@@ -1,0 +1,90 @@
+#!/bin/echo Warning: this is a library file, can not be execute directly:
+############################################################
+#                                                          #
+#             ServerSpeeder Configuration File             #
+#                                                          #
+############################################################
+
+# Format: config="value"
+# Note that spaces are not allowed before and after the equal sign
+
+#------------------------------------------------------#
+#     below config items take effect after reload      #
+#------------------------------------------------------#
+acc="1"
+advacc="1"
+advinacc="1"
+csvmode="0"
+highcsv="0"
+subnetAcc="0"
+maxmode="1"
+maxTxMinSsThresh="1048575"
+maxTxEffectiveMS="0"
+maxAccFlowTxKbps="0"
+pcapEnable="0"
+bypassOverFlows="1"
+initialCwndWan="22"
+l2wQLimit="256 2048"
+w2lQLimit="256 2048"
+shrinkPacket="0"
+retranWaitListMS="32"
+halfCwndMinSRtt="500"
+halfCwndLossRateShift="3"
+shaperEnable="1"
+tcpOnly="1"
+smBurstMS="16"
+smBurstMin="16000"
+smBurstTolerance="32768"
+flowShortTimeout="30000"
+rsc="1"
+gso="0"
+ultraBoostWin="0"
+minSsThresh="8 24"
+dbcRttThreshMS=""
+smMinKbps=""
+lanSegment=""
+txCongestObey="1"
+taskSchedDelay="1000 1000"
+configTimeout="30"
+tcpFlags="0x0"
+udptun=""
+synRetranMS="0"
+shrinkOSWmem="0"
+mpoolMaxCache="7368000"
+
+#------------------------------------------------------#
+#     below config items take effect after restart     #
+#------------------------------------------------------#
+engineNum="0"
+accppp="0"
+shortRttMS="0"
+packetWrapper="256"
+pmtu=""
+detectInterrupt="0"
+# byte cache
+byteCacheEnable="0"
+dataCompEnable="0"
+httpCompEnable="1"
+byteCacheMemory="250" #MB
+byteCacheDisk="0" #MB
+diskDev="/var/AppEx_Cache"
+#ipHooks="0"
+#ipRxHookPri=""
+#ipTxHookPri=""
+dropCache="0"
+
+# 0:not change  
+# 1: on  
+# 2: off
+txcsum="0" 
+rxcsum="0"
+
+
+#------------------------------------------------------#
+#         do not change the following configs          #
+#------------------------------------------------------#
+usermode=0
+licenseGen=0
+checkLicense=0
+accpath="/proc/net/appex"
+apxlic="/serverspeeder/etc/apx.lic"
