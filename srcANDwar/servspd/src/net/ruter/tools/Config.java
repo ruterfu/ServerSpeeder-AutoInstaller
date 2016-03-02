@@ -10,7 +10,9 @@ import java.util.StringTokenizer;
 
 /**
  * @author Ruter
- * @createTime Feb 7, 2016 7:17:59 PM
+ * @createTime 2016年2月27日
+ * @tips 仅供学习与交流使用
+ * @use 配置文件读取与分割字符串
  */
 public class Config {
 	public String[] split(String res,String sp){

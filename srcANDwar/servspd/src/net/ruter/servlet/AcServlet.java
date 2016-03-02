@@ -1,3 +1,8 @@
+/**
+ * @File AcServlet.java
+ * @Package net.ruter.servlet
+ */
+
 package net.ruter.servlet;
 
 import java.io.IOException;
@@ -13,6 +18,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONObject;
 
+/**
+ * @author Ruter
+ * @createTime 2016年2月27日
+ * @tips 仅供学习与交流使用
+ * @use 认证信息输出
+ */
 @WebServlet(urlPatterns={"/ac.do"}, loadOnStartup=1)
 public class AcServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -25,16 +36,12 @@ public class AcServlet extends HttpServlet {
 	}
 
 	/**
-	 * return status if serverSpeeder request the web(http://host/ac.do?*****)
-	 * code 200 : license is valid
-	 * code 202 : license can be update, it will let serverspeeder run ./bin/updateLic.sh to update license(file delete!)
-	 * ------
 	 * 当软件请求服务器的ac.do时,输出code=200
 	 * code 200 : 会让软件认为授权是正常的,且无需更新
 	 * code 202 : 会让软件认为授权需要更新,随后软件会调用./bin/updateLic.sh来更新授权(该文件已删除)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Map<String, Object> map = new HashMap<String, Object>();
+		Map<String, Object> map = new HashMap<String, Object>(); // 简单的输出,不需要解释吧
 		map.put("code", 200);
 		Random random = new Random();
 		map.put("rdm", random.nextInt(500000));

@@ -3,7 +3,7 @@
 # JUST FOR STUDY, if you like it please SUPPORT GENUINE
 # Regenerate by Ruter
 
-#YOUR SERVER HOST
+#YOUR SERVER HOST change this
 HOST=http://ip.com[:port]
 #YOUR SERVER HOST ADDRESS it will write to /etc/hosts
 HOSTADDR=[hostIP]
