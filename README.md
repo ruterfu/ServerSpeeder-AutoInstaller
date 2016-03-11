@@ -47,6 +47,7 @@ servspdInstaller.sh 为一键安装(无需修改mac地址)
     1.2016年02月29日23:02, 修正输入时间会导致错乱问题,原来版本当输入2100年时,会生成23xx的文件
     2.2016年03月01日16:40, 取消kernel内核单独提供,一并放入网页中,这样无需进行nginx部署
     3.2016年03月02日13:41, 不再更新
+    4.2016年03月11日12:22, 反正有那么多了,就直接改名ServerSpeeder-AutoInstaller.
 项目为java servlet项目,Eclipse Project<br>
 
 ### 需要自行部署eclipse项目,来重定向ss的定时lic检测,否则会因为无法更新lic而导致ss加速无效
